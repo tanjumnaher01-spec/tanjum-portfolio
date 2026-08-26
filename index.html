@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PPKW1TMBLL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PPKW1TMBLL');
+</script>
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>tanjum — AI Research & Detection</title>
+<title>Tanjum Naher — AI Research & Deepfake Detection</title>
+<meta name="description" content="AI/ML researcher building deepfake detection systems that work for underrepresented faces, starting with South Asian women. BSc thesis, CNN model comparisons, and ML engineering projects.">
+
+<meta property="og:title" content="Tanjum Naher — AI Research & Deepfake Detection">
+<meta property="og:description" content="AI/ML researcher building deepfake detection systems that work for underrepresented faces, starting with South Asian women.">
+<meta property="og:image" content="https://tanjum.netlify.app/images/deepfake.jpg">
+<meta property="og:url" content="https://tanjum.netlify.app/">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tanjum Naher — AI Research & Deepfake Detection">
+<meta name="twitter:description" content="AI/ML researcher building deepfake detection systems that work for underrepresented faces.">
+<meta name="twitter:image" content="https://tanjum.netlify.app/images/deepfake.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -334,7 +358,6 @@ CONTACT
 </p>
 
 <div class="contact-grid">
-
 <div>
 
 <h2>
@@ -351,10 +374,10 @@ projects, or future opportunities, feel free to reach out.
 
 <div class="contact-links">
 
-<form action="https://formspree.io/f/mbgrngbk" method="POST" class="contact-form">
-<input type="text" name="name" placeholder="Name" required>
+<form action="https://formspree.io/f/mbgrngbk" method="POST" class="contact-form" onsubmit="this.querySelector('button').disabled=true; this.querySelector('button').innerText='Sending...';">
+<input type="text" name="name" placeholder="Name" required minlength="3" pattern="[A-Za-z\s]{3,}" title="Please enter your name (letters only, at least 3 characters)">
 <input type="email" name="email" placeholder="Email" required>
-<textarea name="message" placeholder="Message" rows="4" required></textarea>
+<textarea name="message" placeholder="Message" rows="4" required minlength="10"></textarea>
 <button type="submit" class="button">Send message</button>
 </form>
 
@@ -364,11 +387,9 @@ projects, or future opportunities, feel free to reach out.
 <a href="CV.pdf" target="_blank">CV →</a>
 
 </div>
-
-
+</div>
 
 </section>
-
 </main>
 
 
